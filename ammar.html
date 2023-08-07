@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audio to Text Conversion</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="text-center mb-4">Audio to Text Conversion</h1>
+    <div class="text-center">
+      <button class="btn btn-primary" id="startButton">Start Recording</button>
+      <button class="btn btn-danger" id="stopButton" disabled>Stop Recording</button>
+    </div>
+    <div id="result" class="mt-4"></div>
+    <form id="saveForm" class="mt-4">
+      <div class="form-group">
+        <label for="text">Converted Text</label>
+        <textarea class="form-control" id="text" rows="4" readonly></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Save Text</button>
+    </form>
+  </div>
+
+  <!-- Include jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="kk.js"></script>
+</body>
+</html>
